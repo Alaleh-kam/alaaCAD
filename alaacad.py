@@ -17,7 +17,6 @@ while menu_choice!='0':
     elif menu_choice=='2':
         pass
     elif menu_choice=='3':
-        for shape in shapes:
-            shg.drawShape(shape)
+        shg.drawShape(shapes)
 
 

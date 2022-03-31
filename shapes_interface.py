@@ -6,3 +6,6 @@ def getShape():
     newShape["upper_left_x"]=input("upper left x:")
     newShape["upper_left_y"]=input("upper left y:")
     return newShape
+
+def printList(shapes):
+    print(shapes)

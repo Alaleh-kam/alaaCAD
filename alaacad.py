@@ -15,7 +15,7 @@ while menu_choice!=0:
     if menu_choice==1:
         shapes.append(shi.getShape())
     elif menu_choice==2:
-        pass
+        shi.printList(shapes)
     elif menu_choice==3:
         shg.drawShape(shapes)
 

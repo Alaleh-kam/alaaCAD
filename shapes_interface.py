@@ -8,9 +8,11 @@ def getShape():
     return newShape
 
 def printList(shapes):
+    c=0
     for i in shapes:
         m=""
         for key in i:
             m=m+" "+str(i[key])
-        print(m)
+        c=c+1
+        print("Shape"+str(c)+":"+m)
 

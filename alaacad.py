@@ -3,7 +3,7 @@ import shapes_graphics as shg
 
 shapes=[]
 menu_choice=''
-while menu_choice!='0':
+while menu_choice!=0:
 
     print("1) add shape")
     print("2) list shapes")
@@ -12,11 +12,11 @@ while menu_choice!='0':
 
     menu_choice=input("Select from the menu:")
 
-    if menu_choice=='1':
+    if menu_choice==1:
         shapes.append(shi.getShape())
-    elif menu_choice=='2':
-        pass
-    elif menu_choice=='3':
+    elif menu_choice==2:
+        shi.printList(shapes)
+    elif menu_choice==3:
         shg.drawShape(shapes)
 
 

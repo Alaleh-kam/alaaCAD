@@ -14,8 +14,8 @@ def printList(shapes):
         for key in i:
             m=""
             m= key +" "+":"+" "+str(i[key])
-            a=a+m+" "
+            a=a+m+" "+","
             
         c=c+1
-        print("Shape"+" "+str(c)+":"+" "+a)
+        print("Shape"+" "+str(c)+":"+" "+a[:-1]) #it means: it will omit the last element which is ","
 

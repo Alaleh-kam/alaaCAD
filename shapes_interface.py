@@ -10,9 +10,12 @@ def getShape():
 def printList(shapes):
     c=0
     for i in shapes:
-        m=""
+        a=""
         for key in i:
-            m=m+" "+str(i[key])
+            m=""
+            m= key +" "+":"+" "+str(i[key])
+            a=a+m+" "
+            
         c=c+1
-        print("Shape"+str(c)+":"+m)
+        print("Shape"+" "+str(c)+":"+" "+a)
 

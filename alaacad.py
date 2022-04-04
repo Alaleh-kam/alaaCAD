@@ -14,9 +14,9 @@ while menu_choice!=0:
     menu_choice=input("Select from the menu:")
 
     if menu_choice==1:
-        shapes.append(shi.getShape())
+        shapes.append(shi.getRectangle())
     elif menu_choice==2:
-        shapes.append(shi.getShape())
+        shapes.append(shi.getTriangle())
     elif menu_choice==3:
         shi.printList(shapes)
     elif menu_choice==4:

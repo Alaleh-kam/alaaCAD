@@ -1,7 +1,7 @@
 import shapes_interface as shi
 import shapes_graphics as shg
 
-shapes=[]
+shapes_listDT=[]
 menu_choice=''
 while menu_choice!=0:
 
@@ -14,12 +14,12 @@ while menu_choice!=0:
     menu_choice=input("Select from the menu:")
 
     if menu_choice==1:
-        shapes.append(shi.getRectangle())
+        shapes_listDT.append(shi.getRectangle())
     elif menu_choice==2:
-        shapes.append(shi.getTriangle())
+        shapes_listDT.append(shi.getTriangle())
     elif menu_choice==3:
-        shi.printList(shapes)
+        shi.printList(shapes_listDT)
     elif menu_choice==4:
-        shg.drawShape(shapes)
+        shg.drawShape(shapes_listDT)
 
 

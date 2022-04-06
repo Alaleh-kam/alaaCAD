@@ -2,10 +2,10 @@ from cmath import sqrt
 import matplotlib.pyplot as plt
 import math
 
-def drawShape(shapes):
+def drawShape(shapes_listDT):
     
     plt.figure()
-    for shape in shapes:
+    for shape in shapes_listDT:
 
         #rectangle
         if shape['type']=='rectangle':

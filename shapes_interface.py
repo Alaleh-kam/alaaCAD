@@ -17,15 +17,15 @@ def getTriangle():
     newShape["type"]="triangle"
     return newShape
 
-def printList(shapes):
-    c=0
-    for i in shapes:
-        a=""
-        for key in i:
-            m=""
-            m= key +" "+":"+" "+str(i[key])
-            a=a+m+" "+","
+def printList(shapes_listDT):
+    shape_number=0
+    for shape_dict in shapes_listDT:
+        Final_listview="" 
+        for key in shape_dict:
+            temp_listview=""
+            temp_listview= key +" "+":"+" "+str(shape_dict[key])
+            final_listview=final_listview+temp_listview+" "+","
             
-        c=c+1
-        print("Shape"+" "+str(c)+":"+" "+a[:-1]) #it means: it will omit the last element which is ","
+        shape_number=shape_number+1
+        print("Shape"+" "+str(shape_number)+":"+" "+Final_listview[:-1]) #it means: it will omit the last element which is ","
 
